@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Alunos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Alunos</h1>
+
+        
+        <!-- Formulário para configurar o limite de alunos -->
+    <label for="limiteAlunos">Limite de alunos:</label>
+    <input type="number" id="limiteAlunos" placeholder="Quantidade máxima de alunos" required>
+    <ul id="resultadoLimite"></ul>
+    <button type="button" id="configurarLimite">Configurar Limite</button>
+
+
+
+<!-- Formulário para cadastrar alunos -->
+<form id="formCadastro">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" required>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" required>
+    <ul id="resultadoCadastro"></ul>
+    <button type="submit">Cadastrar Aluno</button>
+    
+</form>
+
+
+
+       
+        
+        <!-- Busca de aluno -->
+        <div class="form-container">
+            <h2>Buscar Aluno</h2>
+            <input type="text" id="criterioBusca" placeholder="Nome ou Matrícula">
+            <ul id="resultadoBusca"></ul>
+            <button id="buscarAluno">Buscar</button>
+           
+        </div>
+        
+        <!-- Remoção de aluno -->
+        <div class="form-container">
+            <h2>Remover Aluno</h2>
+            <input type="text" id="matriculaRemocao" placeholder="Matrícula">
+            <ul id="resultadoRemocao"></ul>
+            <button id="removerAluno">Remover</button>
+           
+        </div>
+
+        <!-- Exibição da lista de alunos cadastrados -->
+        <h3>Alunos Cadastrados:</h3>
+        <ul id="listaAlunos"></ul>
+        
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
